@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #53bdbd;
+}
+
+.light {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  background: white;
+  animation: lights 2s infinite;
+  animation-fill-mode: forwards;
+  transform: scale(1) translateX(0);
+  margin-left: 590px;
+  margin-top: -99px;
+}
+
+.load {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-top: 340px;
+}
+
+@keyframes lights {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+
+  25% {
+    transform: scale(2) translateX(50px);
+  }
+
+  50% {
+    transform: scale(1) translateX(130px);
+  }
+
+  75% {
+    transform: scale(2) translateX(50px);
+  }
+
+  100% {
+    transform: scale(2) translateX(0px);
+  }
+}
